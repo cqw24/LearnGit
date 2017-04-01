@@ -1,12 +1,12 @@
 # LearnGit
 学习Git
 
-##有关README
+## 有关README
     
 README文件后缀为md，代表的是MarkWord的缩写，README的编写和正常的MarkWord语言编写是一样的
 [README讲解地址](http://blog.csdn.net/kaitiren/article/details/38513715)
 
-##使用git将本地代码上传至github
+## 使用git将本地代码上传至github
 
 >有两种方法将本地代码上传至github，一种是使用SSL，一种是HTTP。使用SSL相对比较麻烦（[学习地址](http://www.cnblogs.com/lijiayi/p/pushtogithub.html)），使用HTTP相对简单点。
 

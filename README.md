@@ -20,7 +20,7 @@ README文件后缀为md，代表的是MarkWord的缩写，README的编写和正�
 >可能碰到的问题
 * 如果输入`$ Git remote add origin 仓库地址`时提示错误信息`fatal: remote origin already exists.`，需要先删除`$ git remote rm origin` ，再重新连接
 * 如果输入`$ git push origin master`，提示出错信息：`error:failed to push som refs to .......`
-    >>解决办法如下：
+    >解决办法如下：
     1、先输入`$ git pull origin master`
     2、再输入`$ git push origin master`
     3、如果出现报错 `fatal: Couldn't find remote ref master`或者`fatal: 'origin' does not appear to be a git repository`以及`fatal: Could not read from remote repository.`

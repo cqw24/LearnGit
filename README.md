@@ -8,14 +8,23 @@ README文件后缀为md，代表的是MarkWord的缩写，README的编写和正�
 
 ## 使用git将本地代码上传至github
 
->有两种方法将本地代码上传至github，一种是使用SSL，一种是HTTP。使用SSL相对比较麻烦（[学习地址](http://www.cnblogs.com/lijiayi/p/pushtogithub.html)），使用HTTP相对简单点。
+```
+1、先在Github上创建远程仓库
 
-* 使用HTTP的简单步骤
-    * 使用xcode创建项目时会自动生成.git文件，所以我们无需手动创建
-    * 添加README.md文件（也可以随后添加）
-    * 连接远程仓库（即github上自己创建的仓库）`git remote add origin 仓库地址链接`
-    * 先拉取`git pull origin master`（防止后面push失败）
-    * `git push -u origin master`
+2、上传本地代码至远程仓库
+//创建README.md文件
+$ echo "# 工程名" >> README.md
+//初始化git（可以省略，因为xcode已经帮忙创建好了.git文件）
+$ git init
+//提交README.md文件
+$ git add README.md
+$ git commit -m "first commit"
+//链接Github仓库
+$ git remote add origin https://github.com/cqw24/SSS.git
+//将本地代码推送至仓库
+$ git push -u origin master
+
+```
 
 >可能碰到的问题
 * 如果输入`$ Git remote add origin 仓库地址`时提示错误信息`fatal: remote origin already exists.`，需要先删除`$ git remote rm origin` ，再重新连接
